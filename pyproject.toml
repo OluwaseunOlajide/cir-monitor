@@ -27,8 +27,8 @@ dev       = [
 cir = "cir.cli:main"
 
 [project.urls]
-Homepage   = "https://github.com/yourusername/cir-monitor"
-Repository = "https://github.com/yourusername/cir-monitor"
+Homepage   = "https://github.com/OluwaseunOlajide/cir-monitor"
+Repository = "https://github.com/OluwaseunOlajide/cir-monitor"
 
 [tool.hatch.build.targets.wheel]
 packages = ["cir"]

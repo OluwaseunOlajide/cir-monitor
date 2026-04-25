@@ -21,13 +21,13 @@ CIR (Confidential Inference Runtime) Monitor provides a safety layer for LLM-bas
 You can install CIR Monitor directly from GitHub:
 
 ```bash
-pip install git+https://github.com/yourusername/cir-monitor.git
+pip install git+https://github.com/OluwaseunOlajide/cir-monitor.git
 ```
 
 For development:
 
 ```bash
-git clone https://github.com/yourusername/cir-monitor.git
+git clone https://github.com/OluwaseunOlajide/cir-monitor.git
 cd cir-monitor
 pip install -e .
 ```
