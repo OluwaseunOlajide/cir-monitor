@@ -1,0 +1,37 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name        = "cir-monitor"
+version     = "0.1.0"
+description = "Behavioral monitoring and static analysis for LangChain and CrewAI agents"
+readme      = "README.md"
+license     = { text = "MIT" }
+requires-python = ">=3.10"
+
+dependencies = [
+    "rich>=13.0",          # console alerts (Stage 3)
+]
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.1"]
+crewai    = ["crewai>=0.28"]
+dev       = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "langchain-core>=0.1",
+]
+
+[project.scripts]
+cir = "cir.cli:main"
+
+[project.urls]
+Homepage   = "https://github.com/yourusername/cir-monitor"
+Repository = "https://github.com/yourusername/cir-monitor"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cir"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "web_search",
+    "description": "Search the web for a given query and return a list of results.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query."
+        },
+        "limit": {
+          "type": "integer",
+          "description": "Maximum number of results to return.",
+          "default": 5
+        }
+      },
+      "required": ["query"]
+    }
+  },
+  {
+    "name": "read_file",
+    "description": "Read the contents of a file at the given path.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Absolute or relative path to the file."
+        }
+      },
+      "required": ["path"]
+    }
+  }
+]
